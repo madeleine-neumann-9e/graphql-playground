@@ -8,7 +8,8 @@ function Posts({ posts, user }) {
         {posts.map(post => (
           <div key={post.id}>
             <div className="p-6 shadow mb-4">
-              <h3 className="text-2xl font-bold text-gray-800">{post.title}</h3>
+              <h3 className="text-2xl font-bold text-gray-800">{ post.title }</h3>
+              <p>{ post.body }</p>
             </div>
           </div>
         ))}
