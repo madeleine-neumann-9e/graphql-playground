@@ -1,4 +1,5 @@
 ###
+This Project is based on this tutorial: https://www.youtube.com/watch?v=kSlJH3hrV58&ab_channel=Web-Crunch
 Example Query for this project:
 ```
 query{
@@ -39,6 +40,5 @@ mutation{
   }
 }
 ```
-
 
 Columnnames with underscores are always written in Camelcase
