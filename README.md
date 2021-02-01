@@ -1,24 +1,44 @@
-# README
+###
+Example Query for this project:
+```
+query{
+  users {
+    firstName
+    lastName
+    email
+    postsCount
+  }
+}
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+query{
+  user(id: 2) {
+    firstName
+    lastName
+    email
+    postsCount
 
-Things you may want to cover:
+    posts {
+      title
+    }
+  }
+}
 
-* Ruby version
+mutation{
+  createUser(input: {
+    firstName: "bla"
+    lastName: "BlaBla"
+    email: "blabla@blabla.de"
+  }) {
+    user{
+      id,
+      firstName,
+      lastName,
+      email
+    }
+    errors
+  }
+}
+```
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Columnnames with underscores are always written in Camelcase
