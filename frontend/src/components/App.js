@@ -15,10 +15,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="container mx-auto px-4">
-
-        {this.state.selectedUser ?
-        <User user={this.state.selectedUser} selectUser={this.selectUser} />  :
-        <Users selectUser={this.selectUser} />}
+        { this.state.selectedUser ?
+        <User user={ this.state.selectedUser } selectUser={ this.selectUser } />  :
+        <Users selectUser={ this.selectUser } /> }
       </div>
     )
   };

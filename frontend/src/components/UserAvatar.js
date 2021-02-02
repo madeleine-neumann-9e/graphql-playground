@@ -7,13 +7,13 @@ const UserAvatar = ({ user }) => (
     <Gravatar email={ user.email } size={ 200 } className="rounded-full text-center inline" />
     <div className='px-6 py-4'>
       <div className='font-bold text-xl mb-2'>
-        {user.firstName} {user.lastName}
+        { user.firstName } { user.lastName }
       </div>
       <p className="text-gray-500 text-sm">
-        {user.email}
+        { user.email }
       </p>
       <p className="text-gray-500 text-sm">
-        {user.postsCount}
+        { user.postsCount }
       </p>
     </div>
   </React.Fragment>
